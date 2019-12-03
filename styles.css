@@ -14,6 +14,15 @@ body {
   font-size: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #151515;
+}
+
+a:hover {
+  color: #0099fa;
+}
+
 header {
   z-index: 4;
   position: fixed;
@@ -45,8 +54,51 @@ main {
 footer {
   font-size: 0.5rem;
   text-align: right;
-  padding: 2rem 20px;
+  padding: 2rem 3rem;
   border-top: 1px solid #0099fa;
+  text-align: center;
+}
+
+footer nav a,
+footer p {
+  padding: 0.25rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #151515;
+  font-size: 1rem;
+  transition: all 0.35s ease;
+  margin: 0;
+}
+
+footer nav a:hover {
+  color: #0099fa;
+}
+
+footer nav strong {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+footer hr {
+  margin: 2rem;
+}
+
+footer nav a:hover {
+  color: #0099fa;
+}
+
+footer nav a:hover .uil-whatsapp {
+  color: #25d366;
+}
+
+footer nav a:hover .uil-vk {
+  color: #4680c2;
+}
+
+footer nav a:hover .uil-telegram {
+  color: #3abfe6;
 }
 
 blockquote {
@@ -121,6 +173,10 @@ blockquote:before {
   text-decoration: none;
   color: #151515;
   transition: all 0.25s ease;
+}
+
+.l.menu {
+  font-size: 1rem;
 }
 
 .l strong {
@@ -322,4 +378,8 @@ i:before {
 .js-gallery__right {
   right: 0;
   border-radius: 5px 0 0 5px;
+}
+
+.decoration {
+  text-decoration: underline;
 }
